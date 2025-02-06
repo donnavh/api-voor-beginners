@@ -4,13 +4,31 @@
 // iedereen: https://fdnd.directus.app/items/person/?fields=id,name,github_handle,avatar&filter={%22squads%22:{%22squad_id%22:{%22name%22:%22Minor%20Web%20Dev%22}}}&sort=name
 
 const baseURL = 'https://fdnd.directus.app/';
-const endpointMe = 'items/person/67';
+const endpointMe = 'items/person/200';
 
 
+// aangeven dat myurl, de url is die persoonlijk is voor mijn naam want die is net gespecificeerd. namelijk de ene + de ander
+const myURL = baseURL + endpointMe;
+
+// console.log(myURL);
+
+getData(myURL);
 
 
+getData(myURL).then(data200 =>{
+	// haal de data van my URL op, pas het aan naar mijn data, 
+	// de functie aanroepen die eronder staat en vervolgens vertellen wat ermee gaat gebeuren
 
+	let deH1 = document.querySelector("h1");
+	// gaat in het document opzoek naar de h1 en geef je een naam om mee aan te spreken
 
+	let myName = data200.data.name;
+	//je maakt een variabele aan, je haalt de naam uit de data die je gekregen hebt 
+
+	deH1.textContent = myName;
+	// je zoekt naar de H1 in het docuemtn en veranderd de content van de h1 met de data die je hebt gekregen van de API
+}
+	)
 
 
 
