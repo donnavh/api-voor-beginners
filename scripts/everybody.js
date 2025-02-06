@@ -18,11 +18,11 @@ getData(everybodyURL).then( dataIedereen =>{
         let personWebsite = person.website;
         // console.log(personName)
 
-        let getalTussen0en1 = math.random();
-        let getalTussen0en5 =
-        // let getalTussen1en5 = Math.random();
+        // let getalTussen0en1 = math.random();
+        // let getalTussen0en5 =
+        // // let getalTussen1en5 = Math.random();
 
-        console.log(getalTussen1en5);
+        // console.log(getalTussen1en5);
 
     if( personImg){
     // do nothing
